@@ -1,99 +1,20 @@
 <html>
     <head>
-        <title>Form Validation</title>
-        
-        <style>
-            span{
-                color: red;
-            }
-            th,td{
-                text-align: start;
-                /* background-color: transparent; */
-                font-size: larger;
-            }
-            #submit{
-                background-color: black;
-                color: white;
-                width: 100%;
-                height: 40px;
-                cursor: pointer;
-                font-size: 20px;
-                transition: all 0.5s ease-in;
-                font-family:'Times New Roman', Times, serif;
-                
-            }
-            #submit:hover{
-            	font-size: 22px;
-            	background-color: #57837B;
-            }
-            table{
-                margin-left: auto;
-                margin-right: auto;
-                /* padding: 50px; */
-                /* background-color: floralwhite; */
-            }
-            h2{
-                text-align: center;
-                margin-top: 30px;
-            }
-            input{
-                width: 400px;
-                height: 30px;
-                border: none;
-                outline: none;
-                background-color: rgba(255,255,255,85%);
-                box-shadow: 10px 5px 10px rgba(0,0,0,50%);
-                font-size: large;   
-                margin-bottom: 30px;
-                border-radius: 6px;
-            }
-            input[type=checkbox]
-            {
-            	width: 20px;
-            	height: 15px;
-            }
-            .password-label
-            {
-            	margin: 0 16px;
-            }
-            .form{
-                text-align: center;
-                box-shadow: 10px 5px 10px rgba(255,255,255,50%);
-                padding: 16px;
-                margin: auto;
-                margin-top: 20px;
-                width: 50%;
-                text-align: center;
-                backdrop-filter: blur(6px);
-    			background-color: rgba(255, 255, 255, 0.5);
-    			border-radius: 12px;
-    
-            }
-            .extra{
-                font-size: larger;
-                color: black;
-            }
-            body{
-            	
-                background: url("https://wallpaperaccess.com/full/1489187.jpg"); 
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
-        </style>
+        <title>SignIn   </title>
+        <link rel="icon" href="Images/logo.png">
+        <link rel="stylesheet" href="mystyles/formstyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="mystyles/styles.css">
     </head>
     <body>
         <nav class="navbar">
             <div class="leftNav">
-                <!-- <ul class="nav"> -->
-                    <a href="index.html" style="margin-left: 20px;"><img src="Images/logo.jpg" style="border-radius: 50%;" width="50px" height="50px" alt=""></a>
-                    <!-- </ul> -->
+                <a href="index.html" style="margin-left: 20px;"><img src="Images/logo.png" style="border-radius: 50%;" width="50px" height="50px" alt=""></a>
             </div>
             <div class="middleNav">
                 <ul class="nav">
                     <li> <a href="index.html"> Home</a></li>
-                    <li><a href="index.html#categories">Menu</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -141,9 +62,9 @@
         <div style="color: whitesmoke;">
             <h4 class="heading">Site Map</h4>
             <dl style="list-style-type: none;">
-                <dt><a href="/index.html">Home</a></dt>
-                <dt><a href="/index.html#categories">Categories</a></dt>
-                <dt><a href="#">Contact</a></dt>
+                <dt><a href="index.html">Home</a></dt>
+                <dt><a href="index.html#categories">Categories</a></dt>
+                <dt><a href="contactus.html">Contact</a></dt>
             </dl>
         </div>
         <div>
@@ -174,144 +95,7 @@
 
 
         <script src="jQuery/jquery-3.6.0.js"></script>
-        <script>
-            $(function(){
-                
-                $('#fname').blur(function(){
-                    valNameNew();
-                });
-                $('#lname').blur(function(){
-                    valLastNameNew();
-                });
-                $('#email').blur(function(){
-                    valEmailNew();
-                });
-                $('#mno').blur(function(){
-                    valMnoNew();
-                });
-                $('#pw').blur(function(){
-                    valPassNew();
-                });
-
-                $('#cpw').blur(function(){
-                    valConPassNew();
-                });
-
-                $('#showPw').change(function(){
-                    let chk = $("#showPw");
-                    console.log(chk);
-                    if(chk.prop('checked')){
-                        $('#pw').attr("type","text");
-                        $('#cpw').attr("type","text");
-                    }
-                    else{
-                        $('#pw').attr("type","password");
-                        $('#cpw').attr("type","password");
-                    }
-                });
-
-                $('#regForm').submit(function(){
-                    console.log("In submit event")
-                    let fname = valNameNew();
-                    let lname = valLastNameNew();
-                    let email = valEmailNew();
-                    let mno = valMnoNew();
-                    let pass = valPassNew();
-                    let cpass = valConPassNew();
-                
-                    if (fname && lname && email && mno && pass && cpass) {
-                        return true;
-                    }
-                    else{
-                        return false;
-                    }
-                });
-            });
-            function valNameNew(){
-                $('#fnameError').html("");
-                let fname = $('#fname').val();
-                if (fname == "") {
-                    $('#fnameError').html("this field is required");
-                    return false;
-                }
-                return true;
-            }
-            function valLastNameNew(){
-                $('#lnameError').html("");
-                let lname = $('#lname').val();
-                if (lname == "") {
-                    $('#lnameError').html("this field is required");
-                    return false;
-                }
-                return true;
-            }
-            function valEmailNew(){
-                $('#emailError').html("");
-                let em = $('#email').val();
-                if(em == ""){
-                    $('#emailError').html("this field is required");
-                    return false;
-                }
-                if(!em.includes('@' && '.')){
-                    $('#emailError').html("Enter correct email");
-                }
-                return true;
-            }
-            function valMnoNew(){
-                $('#mnoError').html("");
-                $('#mnoError1').html("");
-                let mobile = $('#mno').val();
-                if (mobile == "") {
-                    $('#mnoError').html("this field is required");
-                }
-                else{
-                    if(isNaN(mobile)){
-                        $('#mnoError').html("only digits are allowed");
-                        return false;
-                    }
-                    if(mobile.length!=10){
-                        $('#mnoError1').html("mobile number should have 10 digits");
-                        return false;
-                    }
-                }
-                return true;
-            }
-
-            function valPassNew(){
-                $('#pwError').html("");
-                let pattern = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{4,})");
-
-                let pass = $('#pw').val();
-                if (pass == "") {
-                    $('#pwError').html("this field is required");
-                    return false;
-                }
-                else{
-                    if(pattern.test(pass)!=true){
-                        console.log(pattern.test(pass));
-                        $('#pwError').html("keep one special char, character and number");
-                        return false;
-                    }
-                }
-                return true;
-            }
-
-            function valConPassNew(){
-                $('#cpwError').html("");
-                let pass = $('#pw').val();
-                let conpass = $('#cpw').val();
-
-                if (conpass == "") {
-                    $('#cpwError').html("this field is required");
-                    return false;
-                }
-                if(pass != conpass){
-                    $('#cpwError').html("Both password should match");
-                    return false;
-                }
-                return true;
-            }
-        </script>
+        <script src="jQuery/sign.js"></script>
 
     </body>
 </html>

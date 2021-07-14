@@ -1,0 +1,76 @@
+span{
+    color: red;
+    font-size: small;
+}
+th,td{
+    text-align: start;
+    /* background-color: transparent; */
+    font-size: larger;
+}
+#submit{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.5s ease-in;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+#submit:hover{
+    font-size: 22px;
+    background-color: #57837B;
+}
+table{
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-left: 23%;
+}
+h2{
+    text-align: center;
+    margin-top: 30px;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,85%);
+    box-shadow: 10px 5px 10px rgba(0,0,0,50%);
+    font-size: large;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+input[type=checkbox]
+{
+    width: 30px;
+    height: 18px;
+}
+.password-label
+{
+    margin: 0 16px;         
+}
+.form{
+    text-align: center;
+    margin-right: auto;
+    box-shadow: 10px 5px 10px rgba(255,255,255,50%);
+    padding: 16px;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+
+}
+.extra{
+    font-size: larger;
+    color: black;
+}
+body{
+    
+    background: url("../Images/background.jpg"); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

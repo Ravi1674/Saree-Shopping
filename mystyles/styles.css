@@ -6,6 +6,9 @@
     z-index: 2;
     margin-top: 0px ;
 }
+body{
+    margin: 0;
+}
 .heading{
     text-decoration: underline;
 }
@@ -44,8 +47,8 @@ li a:hover{
     object-fit: cover;
 }
 .container img{
-    height: 600px;
-    width: 1450px;
+    height: 650px;
+    width: 100%;
 }
 .product{
     display:inline-block;
@@ -124,7 +127,7 @@ li a:hover{
     cursor: pointer;
 }
 .bkimage{
-    background-image: url("/Images/fix.jpg");
+    background-image: url("../Images/fixSaree.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,7 +176,7 @@ li a:hover{
 
 }
 .contactBtn{
-    width: 120px;
+    width: 34%;
     height: 40px;
     background-color: blue;
     color:whitesmoke;
@@ -183,7 +186,7 @@ li a:hover{
     font: 15px Arial, sans-serif;
     font-weight: bolder;
     box-shadow: 3px 3px 13px rgb(128, 128, 128);
-
+    margin-top: 20px;
 }
 .blockImage{
     height: 400px;
