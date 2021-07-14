@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="mystyles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="jQuery/jquery-3.6.0.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="leftNav" style="margin-top: 6px;">
+          <!-- <ul class="nav"> -->
+            <a href="index.html" style="margin-left: 20px;"><img src="Images/logo.jpg" style="border-radius: 50%;" width="50px" height="50px" alt=""></a>
+            <!-- </ul> -->
+        </div>
+        <div class="middleNav">
+            <ul class="nav">
+                <li> <a href="index.html"> Home</a></li>
+                <li><a href="#categories">Categories </a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="rightNav">
+            <ul class="nav">
+                <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <img src="/Images/s1.jpg" id="carousel" alt="carousel">
+        </div>
+        <section class="product">
+            <div class="lpro" id="l">
+                <a href="#newCol">
+                    <div class="newCollection">
+                        <div class="font" id="font">
+                            New Collections
+                        </div>
+                        <img class="new" src="/Images/s9.jpg" width="710px" height="420px"  alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="rpro">
+                <div class="rpro-up">
+                    <a href="#popular">
+                        <div class="newCollection rpro-up-1" id="l" style="height: 205px;">
+                            <div class="font" id="font">
+                                Popular Products
+                            </div>
+                            <img class="new" src="/Images/popular.jpg" width="340px" height="205px" alt="">
+                        </div>
+                    </a>
+                    <a href="#trending">
+                        <div class="rpro-up-2 newCollection" id="l">
+                            <div class="font" id="font">
+                                Trending Products
+                            </div>
+                            <img class="new" src="/Images/s10.jpg" width="340px" height="205px" alt="">
+                        </div>
+                    </a>
+                </div>
+                
+
+                <div class="rpro-dwn newCollection" style="width: 710px; height: 205px; position: absolute; top: 215px;">
+                    
+                    <div class="font" id="font">
+                        Old Collections
+                    </div>
+                    <img  class="new" id="l" src="/Images/old.jpg" width="710px" height="205px" alt="">
+
+                </div>
+
+
+                <!-- <div class="rpro-dwn newCollection" style="border: 2px solid black;">
+                    <div class="font oldCollection" id="font">
+                        Old Collections
+                    </div>
+                    <img  class="new" id="l" src="../Images/3.jpg" width="700px" height="200px" alt="">
+                </div> -->
+
+            </div>
+        </section>
+        <section style="margin-bottom: 100px;">
+            <div class="bkimage">
+                <div class="fixBack">
+                    <p style="font-size: 40px;">Limited time offer</p>
+                    <p style="font-weight: bold; font-size: 100px;">50% OFF</p>
+                    <p style="font-size: 25px;">Get The Best Deals Now</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main id="categories">
+        <center><h1 id="newCol">New Collections</h1></center>
+        <section class="blocks">
+            <div class="innerBlocks" id="b1">
+                <img class="blockImage" src="Images/a1.jpg" alt="">
+                <h3>Shaded Purple Chiffon Saree With Embroidered Blouse </h3>
+                <div class="price-rate">
+                    <span class="price line">Rs. 1499 </span>
+                      <span class="price">Rs. 999</span>
+                    <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+
+                </div>
+                <div id="i1" hidden>
+                    <button class="buyBtn">Buy Now</button>
+                    <button class="addBtn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="innerBlocks" id="b2">
+                <img class="blockImage" src="Images/a2.jpg" alt="">
+                <h3>Rajesh Silk Mills Black Silk Blend Saree With Unstitched Blouse</h3>
+                <div class="price-rate">
+                    <span class="price line">Rs. 1499 </span>
+                      <span class="price">Rs. 999</span>
+                    <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+                </div>
+                <div id="i2" hidden>
+                    <button class="buyBtn">Buy Now</button>
+                    <button class="addBtn">Add To Cart</button>            
+                </div>
+            </div>
+            <div class="innerBlocks" id="b3">
+                <img class="blockImage" src="Images/a3.jpg" alt="">
+                <div>
+                    <h3>Pr Fashion New Designer Saree with red blouse</h3>
+                    <div class="price-rate">
+                        <span class="price line">Rs. 1499 </span>
+                        <span class="price">Rs. 999</span>
+                        <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+                    </div>
+                    <div id="i3" hidden>
+                        <button class="buyBtn">Buy Now</button>
+                        <button class="addBtn">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+        <section class="blocks">
+            <div class="innerBlocks" id="b4">
+                <img class="blockImage" src="Images/a4.jpg" alt="">
+                <h3>Simple Designer Saree</h3>
+                <div class="price-rate">
+                    <span class="price line">Rs. 1499 </span>
+                      <span class="price">Rs. 999</span>
+                    <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+
+                </div>
+                <div id="i4" hidden>
+                    <button class="buyBtn">Buy Now</button>
+                    <button class="addBtn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="innerBlocks" id="b5">
+                <img class="blockImage" src="Images/a5.jpg" alt="">
+                <h3>Red Silk Saree </h3>
+                <div class="price-rate">
+                    <span class="price line">Rs. 1499 </span>
+                      <span class="price">Rs. 999</span>
+                    <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+                </div>
+                <div id="i5" hidden>
+                    <button class="buyBtn">Buy Now</button>
+                    <button class="addBtn">Add To Cart</button>            
+                </div>
+            </div>
+            <div class="innerBlocks" id="b6">
+                <img class="blockImage" src="Images/a6.jpg" alt="">
+                <div>
+                    <h3>Party Wear Ruffle Saree</h3>
+                    <div class="price-rate">
+                        <span class="price line">Rs. 1499 </span>
+                        <span class="price">Rs. 999</span>
+                        <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+                    </div>
+                    <div id="i6" hidden>
+                        <button class="buyBtn">Buy Now</button>
+                        <button class="addBtn">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+        <section>
+            <div class="between">
+                <img src="/Images/collection.jpg" width="" alt="">
+            </div>
+        </section>
+        <center><h1 id="popular">Popular Products</h1></center>
+        <section class="blocks">
+            <div class="innerBlocks" id="p1">
+                <img class="blockImage" src="Images/a7.jpg" alt="">
+                <h3> Beautiful skyblue Color Most Popular Saree </h3>
+                <div class="price-rate">
+                    <span class="price line">Rs. 1499 </span>
+                      <span class="price">Rs. 999</span>
+                    <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+
+                </div>
+                <div id="pi1" hidden>
+                    <button class="buyBtn">Buy Now</button>
+                    <button class="addBtn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="innerBlocks" id="p2">
+                <img class="blockImage" src="Images/a8.jpeg" alt="">
+                <h3>Gold Color Fancy Thread Sequence Work Party Wear Saree</h3>
+                <div class="price-rate">
+                    <span class="price line">Rs. 1499 </span>
+                      <span class="price">Rs. 999</span>
+                    <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+                </div>
+                <div id="pi2" hidden>
+                    <button class="buyBtn">Buy Now</button>
+                    <button class="addBtn">Add To Cart</button>            
+                </div>
+            </div>
+            <div class="innerBlocks" id="p3">
+                <img class="blockImage" src="Images/a9.jpg" alt="">
+                <div>
+                    <h3>Simple and very popular new Saree</h3>
+                    <div class="price-rate">
+                        <span class="price line">Rs. 1499 </span>
+                        <span class="price">Rs. 999</span>
+                        <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+                    </div>
+                    <div id="pi3" hidden>
+                        <button class="buyBtn">Buy Now</button>
+                        <button class="addBtn">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <center><h1 id="trending">Trending Products</h1></center>
+        <section class="blocks">
+            <div class="innerBlocks" id="t1">
+                <img class="blockImage" src="Images/a10.jpg" alt="">
+                <h3>Simple Designer Saree</h3>
+                <div class="price-rate">
+                    <span class="price line">Rs. 1499 </span>
+                      <span class="price">Rs. 999</span>
+                    <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+
+                </div>
+                <div id="ti1" hidden>
+                    <button class="buyBtn">Buy Now</button>
+                    <button class="addBtn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="innerBlocks" id="t2">
+                <img class="blockImage" src="Images/a11.jpg" alt="">
+                <h3>Red Silk Saree </h3>
+                <div class="price-rate">
+                    <span class="price line">Rs. 1499 </span>
+                      <span class="price">Rs. 999</span>
+                    <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+                </div>
+                <div id="ti2" hidden>
+                    <button class="buyBtn">Buy Now</button>
+                    <button class="addBtn">Add To Cart</button>            
+                </div>
+            </div>
+            <div class="innerBlocks" id="t3">
+                <img class="blockImage" src="Images/a12.jpg" alt="">
+                <div>
+                    <h3>Party Wear Ruffle Saree</h3>
+                    <div class="price-rate">
+                        <span class="price line">Rs. 1499 </span>
+                        <span class="price">Rs. 999</span>
+                        <i class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</i>
+                    </div>
+                    <div id="ti3" hidden>
+                        <button class="buyBtn">Buy Now</button>
+                        <button class="addBtn">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div style="color: whitesmoke;">
+            <h4 class="heading">Links</h4>
+            <dl style="list-style-type: none;">
+                <dt><a href="/index.html">Home</a></dt>
+                <dt><a href="/index.html#categories">Categories</a></dt>
+                <dt><a href="#">Contact</a></dt>
+            </dl>
+        </div>
+        <div>
+            <h4 class="heading">Our Address</h4>
+            <address>
+                121, SG highway Near Iscon temple<br>
+                Bopal road satellite <br>
+                Ahmedabad<br><br>
+                <i class="fa fa-phone fa-lg"></i> +91 1234 5678<br><br>
+                <i class="fa fa-fax fa-lg"></i> +91 8765 4321<br><br>
+                <i class="fa fa-envelope fa-lg"></i>
+                <a style="color: white;" href="mailto:sareeshop@saree.net">mailto:sareeshop@saree.net</a>
+            </address>
+        </div>
+        <div class="" style="margin:auto 0px 0px;">
+            <p>© Copyright 2021 Saree Shopping</p>
+        </div>
+        <div class="social" style= "font-size: 30px;">
+            <h4 class="heading" style="font-size: large;">Follow Us On :</h4>
+            <a href="http://google.com/"><i class="fab fa-google"></i></a>
+            <a href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook"></i></a>
+            <a href="http://www.linkedin.com/in/"><i class="fab fa-linkedin"></i></a>
+            <a href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:"><i class="fa fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="/jQuery/indexJs.js"></script>
+<script>
+    var slide = document.getElementById("carousel");
+    // var i=0,j=10;
+     var time=0;
+
+    var array = ["/Images/s1.jpg","Images/s2.jpg","/Images/s3.jpg","/Images/s4.jpg","/Images/s5.jpg"];
+    slideshow();
+    function slideshow(){
+        
+        for (let i = 0; i < array.length; i++) {
+            setTimeout(()=>{
+                slide.src = array[i];
+            },time);
+            time+=2000;
+        }
+        slideshow();
+    }
+</script>
