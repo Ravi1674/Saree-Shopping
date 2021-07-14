@@ -50,6 +50,18 @@ li a:hover{
     height: 650px;
     width: 100%;
 }
+.quote{
+    
+    height: 250px;
+    padding-top: 80px;
+    text-align: center;
+}
+.quote hr{
+    width: 30%;
+}
+.fa-quote-left,.fa-quote-right{
+    font-size: 30px;   
+}
 .product{
     display:inline-block;
     /* border: 1px solid black; */
