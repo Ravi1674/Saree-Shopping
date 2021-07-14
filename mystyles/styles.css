@@ -285,3 +285,13 @@ dt a{
 .fa-youtube:hover{
     color: red;
 }
+.topScroll i{
+    left: 96%;
+    position: fixed;
+    font-size: 30px;
+    color: white;
+    top:90%;
+    background-color: rgb(61, 40, 40);
+    padding: 10px;
+    border-radius: 50%;
+}
